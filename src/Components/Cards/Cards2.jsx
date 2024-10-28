@@ -1,9 +1,9 @@
 import React from "react";
 import bgImg from "../../assets/img/cards1/r.jpg"
-import v from '../../assets/img/cards2/e.jpg';
-import a from '../../assets/img/cards2/q.jpeg';
-import c from '../../assets/img/cards2/r.jpg';
-import d from '../../assets/img/cards2/w.jpg';
+import v from '../../assets/img/Cards2/e.jpg';
+import a from '../../assets/img/Cards2/q.jpeg';
+import c from '../../assets/img/Cards2/r.jpg';
+import d from '../../assets/img/Cards2/w.jpg';
 const experiences = [
   {
     title: "Stay in the Tea & Beach Sri Lanka",
