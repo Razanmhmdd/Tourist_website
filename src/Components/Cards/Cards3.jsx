@@ -1,9 +1,9 @@
 import React from "react";
-import bgImg from "../../assets/img/cards1/q.jpg";
-import v from '../../assets/img/cards2/bbq.jpeg';
-import a from '../../assets/img/cards2/sea.jpeg';
-import c from '../../assets/img/cards2/fine.jpeg';
-import d from '../../assets/img/cards2/food.jpeg';
+import bgImg from "../../assets/img/Cards1/q.jpg";
+import v from '../../assets/img/Cards2/bbq.jpeg';
+import a from '../../assets/img/Cards2/sea.jpeg';
+import c from '../../assets/img/Cards2/fine.jpeg';
+import d from '../../assets/img/Cards2/food.jpeg';
 
 const experiences = [
   {
