@@ -1,11 +1,11 @@
 import React from 'react'
-import dz from '../../assets/img/w.jpg';
-import logo from "../../assets/img/logo.png";
+import bgImg from "/img/w.jpg"
+import logo from "/img/logo.png";
 
 const Footer = () => {
   return (
     <div >
-        <footer className="footer bg-base-200 text-base-content p-10" style={{ backgroundImage: `url(${dz})` }}>
+        <footer className="footer bg-base-200 text-base-content p-10" style={{ backgroundImage: `url(${bgImg})` }}>
   <nav>
     <img src={logo} alt="Logo" className="h-12 w-auto" />
     <a className="link link-hover">No. 15/1/C,</a>

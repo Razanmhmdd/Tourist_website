@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import logo from "../../assets/img/logo.png";
+import logo from "/img/logo.png";
 import { ImMenu } from "react-icons/im";
 
 

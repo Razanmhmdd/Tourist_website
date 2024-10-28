@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import Logo1 from "../../assets/img/logos/logo1.png";
-import Logo2 from "../../assets/img/logos/logo2.png";
-import Logo3 from "../../assets/img/logos/logo3.png";
-import Logo4 from "../../assets/img/logos/logo4.png";
-import Logo5 from "../../assets/img/logos/logo5.png";
-import Logo6 from "../../assets/img/logos/logo6.png";
+import Logo1 from "/img/logos/logo1.png";
+import Logo2 from "/img/logos/logo2.png";
+import Logo4 from "/img/logos/logo4.png";
+import Logo3 from "/img/logos/logo3.png";
+import Logo5 from "/img/logos/logo5.png";
+import Logo6 from "/img/logos/logo6.png";
 
 function LogoCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);

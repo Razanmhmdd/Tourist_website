@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import plage from '../../assets/img/q.jpg';
-import dz from '../../assets/img/r.jpg';
-import d from '../../assets/img/w.jpg';
-import BookingForm from '../BookingForm/BookingForm';
+import plage from "/img/q.jpg"
+import dz from "/img/r.jpg"
+import d from "/img/w.jpg"
+import  BookingForm  from "../BookingForm/BookingForm";
 
 const HeroSection = () => {
   const images = [plage, dz, d];

@@ -1,31 +1,32 @@
 import React from "react";
-import bgImg from "../../assets/img/cards1/r.jpg"
-import v from '../../assets/img/cards2/e.jpg';
-import a from '../../assets/img/cards2/q.jpeg';
-import c from '../../assets/img/cards2/r.jpg';
-import d from '../../assets/img/cards2/w.jpg';
+import bgImg from "/img/w.jpg"
+import v from "/img/Cards2/q.jpeg"
+import a from "/img/Cards2/w.jpg"
+import c from "/img/Cards2/e.jpg"
+import d from "/img/Cards2/r.jpg"
+
 const experiences = [
   {
     title: "Stay in the Tea & Beach Sri Lanka",
-    image: a,
-    description:
-      "Sri Lanka provides the chance to immerse oneself in the rich cultural heritage of the country, with easy access to ancient temples, ruins, and other historical sites, while enjoying luxurious accommodations in a stunning setting, surrounded by lush gardens that provide a secluded oasis.",
-  },
-  {
-    title: "Sri Lankan National Parks",
-    image: d,
-    description:
-      "A leopard basking in the fork of a tree. A family of elephants lumbering out of the tropical undergrowth. These are just some of the sights awaiting in Sri Lanka’s national parks – some of the wildest, most beautiful places on earth.",
-  },
-  {
-    title: "Sri Lankan Hospitality",
     image: v,
     description:
       "Sri Lanka provides the chance to immerse oneself in the rich cultural heritage of the country, with easy access to ancient temples, ruins, and other historical sites, while enjoying luxurious accommodations in a stunning setting, surrounded by lush gardens that provide a secluded oasis.",
   },
   {
-    title: "Wildlife",
+    title: "Sri Lankan National Parks",
+    image: a,
+    description:
+      "A leopard basking in the fork of a tree. A family of elephants lumbering out of the tropical undergrowth. These are just some of the sights awaiting in Sri Lanka’s national parks – some of the wildest, most beautiful places on earth.",
+  },
+  {
+    title: "Sri Lankan Hospitality",
     image: c,
+    description:
+      "Sri Lanka provides the chance to immerse oneself in the rich cultural heritage of the country, with easy access to ancient temples, ruins, and other historical sites, while enjoying luxurious accommodations in a stunning setting, surrounded by lush gardens that provide a secluded oasis.",
+  },
+  {
+    title: "Wildlife",
+    image: d,
     description:
       "Sri Lankan wildlife is incredibly diverse, with over 26 national parks home to elephants, leopards, sloth bears, and a variety of bird species. The island’s unique ecosystems make it a biodiversity hotspot for nature enthusiasts and wildlife photographers alike.",
   },

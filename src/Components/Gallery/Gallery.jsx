@@ -1,13 +1,13 @@
 
 import React, { useState, useEffect } from 'react';
-import r from '../../assets/img/cards1/casino.jpg';
-import t from '../../assets/img/cards1/q.jpg';
-import u from '../../assets/img/cards1/w.jpg';
-import y from '../../assets/img/cards1/honey.jpg';
-import v from '../../assets/img/cards1/golf.jpg';
-import a from '../../assets/img/cards1/elephants.jpg';
-import c from '../../assets/img/cards1/w.jpg';
-import d from '../../assets/img/cards1/budha.jpg';
+import r from '/img/cards1/casino.jpg';
+import t from '/img/cards1/q.jpg';
+import u from '/img/cards1/w.jpg';
+import y from '/img/cards1/honey.jpg';
+import v from '/img/cards1/golf.jpg';
+import a from '/img/cards1/elephants.jpg';
+import c from '/img/cards1/w.jpg';
+import d from '/img/cards1/budha.jpg';
 
 const Gallery = () => {
 
