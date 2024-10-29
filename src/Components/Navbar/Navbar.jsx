@@ -7,7 +7,7 @@ const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <div className="navbar bg-transparent flex items-center justify-between px-4 py-2">
+    <div className="navbar bg-transparent flex items-center justify-between px-4 py-2 " data-theme="light">
       {/* Logo Section */}
       <div className="flex-1">
         <a className="btn btn-ghost">

@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {},
   },
-  darkMode: 'media',
+  darkMode: 'false',
   
   plugins: [  require('daisyui'),
   ],
