@@ -3,7 +3,7 @@
   import HeroSection from '../../Components/Hero/HeroSection'
   import Welcome from '../../Components/Welcome/Welcome'
   import Youtube from '../../Components/Youtube/Youtube'
-  import CardCarousel from '../../Components/Cards/Cards'
+  import Cards1 from '../../Components/Cards/Cards1'
   import Cards2 from '../../Components/Cards/Cards2'
   import Cards3 from '../../Components/Cards/Cards3'
   import Cards4 from '../../Components/Cards/Cards4'
@@ -32,7 +32,7 @@ const Home = () => {
        <Youtube/> 
       </div>
       <div>
-       <CardCarousel/> 
+       <Cards1/> 
       </div>
       <div>
          <Cards2/>

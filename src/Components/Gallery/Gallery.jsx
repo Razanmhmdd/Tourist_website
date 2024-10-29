@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import r from '/img/cards1/casino.jpg';
+import r from '/img/cards1/casino.webp';
 import t from '/img/cards1/q.jpg';
 import u from '/img/cards1/w.jpg';
 import y from '/img/cards1/honey.jpg';

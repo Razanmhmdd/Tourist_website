@@ -32,7 +32,7 @@ const Cards4 = () => {
         className="bg-cover bg-center min-h-screen p-10 flex flex-col items-center text-center"
         style={{ backgroundImage: `url(${bgImg})` }}
       >
-        <h2 className="text-3xl font-bold text-white mb-8">POPULAR ACTIVITIES IN SRILANKA</h2>
+        <h2 className="text-3xl font-bold text-black mb-8">POPULAR ACTIVITIES IN SRILANKA</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {experiences.map((experience, index) => (
             <div
