@@ -5,8 +5,10 @@ module.exports = {
   theme: {
     extend: {},
   },
-  darkMode: 'false',
-  
-  plugins: [  require('daisyui'),
+  plugins: [
+    require('daisyui'),
   ],
+  daisyui: {
+    themes: ["light"], // Enforce only the light theme
+  },
 };
