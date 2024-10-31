@@ -8,18 +8,18 @@ const BookingHero = () => {
   };
 
   return (
-    <div className="max-w-4xl mx-auto p-8 bg-white bg-opacity-80 shadow-lg rounded-lg mt-8">
+    <div className="max-w-4xl mx-auto p-2 sm:p-6 bg-white bg-opacity-75 shadow-lg rounded-lg mt-16 -mt-0">
       {/* Tabs */}
-      <div className="flex justify-center space-x-6 mb-6 border-b pb-4">
+      <div className="flex justify-center space-x-2 sm:space-x-4 mb-4 border-b pb-2">
         {['Hotel', 'Package', 'Transfer'].map((tab) => (
           <button
             key={tab}
             onClick={() => handleTabSwitch(tab)}
             className={`${
               activeTab === tab
-                ? 'border-b-4 border-blue-500 text-blue-500'
+                ? 'border-b-2 border-blue-500 text-blue-500'
                 : 'text-gray-500'
-            } pb-2 text-lg font-semibold focus:outline-none transition duration-300`}
+            } pb-1 text-sm sm:text-base font-medium focus:outline-none transition duration-300`}
           >
             {tab}
           </button>
@@ -27,13 +27,13 @@ const BookingHero = () => {
       </div>
 
       {/* Tab Content */}
-      <div className="flex flex-col items-center p-6 bg-gray-50 rounded-lg shadow-md w-full">
+      <div className="p-4 -mb-5 sm:p-6 bg-gray-50 rounded-lg shadow-md w-full">
         {/* Form */}
         {activeTab === 'Hotel' && (
-          <form className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 w-full max-w-4xl">
+          <form className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             <div>
-              <label className="block text-gray-700">Select Hotel</label>
-              <select className="w-full p-3 border border-gray-300 rounded-lg mt-1 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-400">
+              <label className="block text-gray-600 text-sm mb-1">Select Hotel</label>
+              <select className="w-full p-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-1 focus:ring-blue-400">
                 <option>Select Hotel</option>
                 <option>KingsBurry</option>
                 <option>Galleface</option>
@@ -41,31 +41,31 @@ const BookingHero = () => {
               </select>
             </div>
             <div>
-              <label className="block text-gray-700">Check-in Date</label>
+              <label className="block text-gray-600 text-sm mb-1">Check-in Date</label>
               <input
                 type="date"
-                className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+                className="w-full p-2 border rounded-md text-sm focus:outline-none focus:ring-1 focus:ring-blue-400"
               />
             </div>
             <div>
-              <label className="block text-gray-700">Check-out Date</label>
+              <label className="block text-gray-600 text-sm mb-1">Check-out Date</label>
               <input
                 type="date"
-                className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+                className="w-full p-2 border rounded-md text-sm focus:outline-none focus:ring-1 focus:ring-blue-400"
               />
             </div>
             <div>
-              <label className="block text-gray-700">Nationality</label>
+              <label className="block text-gray-600 text-sm mb-1">Nationality</label>
               <input
                 type="text"
-                className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+                className="w-full p-2 border rounded-md text-sm focus:outline-none focus:ring-1 focus:ring-blue-400"
                 placeholder="Enter Nationality"
               />
             </div>
-            <div className="col-span-1 md:col-span-2 lg:col-span-4">
+            <div className="col-span-1 sm:col-span-2 lg:col-span-4">
               <button
                 type="submit"
-                className="w-full mt-4 py-3 px-4 bg-blue-500 text-white rounded-lg hover:bg-blue-600 focus:outline-none"
+                className="w-full py-2 bg-blue-500 text-white text-sm rounded-md hover:bg-blue-600 focus:outline-none"
               >
                 Search Hotels
               </button>
@@ -74,41 +74,41 @@ const BookingHero = () => {
         )}
 
         {activeTab === 'Package' && (
-          <form className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 w-full max-w-4xl">
+          <form className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             <div>
-              <label className="block text-gray-700">Location</label>
+              <label className="block text-gray-600 text-sm mb-1">Location</label>
               <input
                 type="text"
-                className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+                className="w-full p-2 border rounded-md text-sm focus:outline-none focus:ring-1 focus:ring-blue-400"
                 placeholder="Enter location"
               />
             </div>
             <div>
-              <label className="block text-gray-700">Location</label>
+              <label className="block text-gray-600 text-sm mb-1">Destination</label>
               <input
                 type="text"
-                className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
-                placeholder="Enter location"
+                className="w-full p-2 border rounded-md text-sm focus:outline-none focus:ring-1 focus:ring-blue-400"
+                placeholder="Enter destination"
               />
             </div>
             <div>
-              <label className="block text-gray-700">Start Date</label>
+              <label className="block text-gray-600 text-sm mb-1">Start Date</label>
               <input
                 type="date"
-                className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+                className="w-full p-2 border rounded-md text-sm focus:outline-none focus:ring-1 focus:ring-blue-400"
               />
             </div>
             <div>
-              <label className="block text-gray-700">End Date</label>
+              <label className="block text-gray-600 text-sm mb-1">End Date</label>
               <input
                 type="date"
-                className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+                className="w-full p-2 border rounded-md text-sm focus:outline-none focus:ring-1 focus:ring-blue-400"
               />
             </div>
-            <div className="col-span-1 md:col-span-2 lg:col-span-4">
+            <div className="col-span-1 sm:col-span-2 lg:col-span-4">
               <button
                 type="submit"
-                className="w-full mt-4 py-3 px-4 bg-green-500 text-white rounded-lg hover:bg-green-600 focus:outline-none"
+                className="w-full py-2 bg-green-500 text-white text-sm rounded-md hover:bg-green-600 focus:outline-none"
               >
                 Search Packages
               </button>
@@ -117,42 +117,42 @@ const BookingHero = () => {
         )}
 
         {activeTab === 'Transfer' && (
-          <form className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 w-full max-w-4xl">
+          <form className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             <div>
-              <label className="block text-gray-700">Pick-up Location</label>
+              <label className="block text-gray-600 text-sm mb-1">Pick-up Location</label>
               <input
                 type="text"
-                className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+                className="w-full p-2 border rounded-md text-sm focus:outline-none focus:ring-1 focus:ring-blue-400"
                 placeholder="Enter pick-up location"
               />
             </div>
             <div>
-              <label className="block text-gray-700">Drop-off Location</label>
+              <label className="block text-gray-600 text-sm mb-1">Drop-off Location</label>
               <input
                 type="text"
-                className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+                className="w-full p-2 border rounded-md text-sm focus:outline-none focus:ring-1 focus:ring-blue-400"
                 placeholder="Enter drop-off location"
               />
             </div>
             <div>
-              <label className="block text-gray-700">Transfer Date</label>
+              <label className="block text-gray-600 text-sm mb-1">Transfer Date</label>
               <input
                 type="date"
-                className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+                className="w-full p-2 border rounded-md text-sm focus:outline-none focus:ring-1 focus:ring-blue-400"
               />
             </div>
             <div>
-              <label className="block text-gray-700">Location</label>
+              <label className="block text-gray-600 text-sm mb-1">Additional Info</label>
               <input
                 type="text"
-                className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
-                placeholder="Enter location"
+                className="w-full p-2 border rounded-md text-sm focus:outline-none focus:ring-1 focus:ring-blue-400"
+                placeholder="Enter additional info"
               />
             </div>
-            <div className="col-span-1 md:col-span-2 lg:col-span-4">
+            <div className="col-span-1 sm:col-span-2 lg:col-span-4">
               <button
                 type="submit"
-                className="w-full mt-4 py-3 px-4 bg-yellow-500 text-white rounded-lg hover:bg-yellow-600 focus:outline-none"
+                className="w-full py-2 bg-yellow-500 text-white text-sm rounded-md hover:bg-yellow-600 focus:outline-none"
               >
                 Book Transfer
               </button>
