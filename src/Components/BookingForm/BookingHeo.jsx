@@ -1,167 +1,166 @@
 import React, { useState } from 'react';
 
 const BookingHero = () => {
-  const [activeTab, setActiveTab] = useState("hotels"); // Default to "hotels"
+  const [activeTab, setActiveTab] = useState('Hotel');
+
+  const handleTabSwitch = (tab) => {
+    setActiveTab(tab);
+  };
 
   return (
-    <section className="bg-white bg-opacity-80 rounded-xl py-10 px-5 md:px-20">
-      <div className="max-w-5xl mx-auto">
-        
-        {/* Tabs */}
-        <div className="flex">
-          {["Hotels", "Transfers", "Packages"].map((tab) => (
-            <button
-              key={tab}
-              onClick={() => setActiveTab(tab.toLowerCase())} // Update activeTab on click
-              className={`flex-1 text-center py-3 text-lg font-semibold ${
-                activeTab === tab.toLowerCase()
-                  ? "bg-gray-800 text-white"
-                  : "bg-gray-200 text-gray-600"
-              }`}
-            >
-              {tab}
-            </button>
-          ))}
-        </div>
-
-        {/* Form based on activeTab */}
-        <div className="mt-5 bg-white bg-opacity-80 rounded-lg shadow-lg p-5 md:flex md:items-center space-y-4 md:space-y-0 md:space-x-4">
-          
-          {activeTab === "hotels" && (
-            <>
-              {/* Hotels Form */}
-              <div className="flex-1">
-                <label className="block text-gray-700">Select Hotel</label>
-                <select className="w-full p-3 border border-gray-300 rounded-md mt-1 text-gray-700">
-                  <option>Select Hotel</option>
-                  <option>KingsBurry</option>
-                  <option>Galleface</option>
-                  <option>Galadhari</option>
-                </select>
-              </div>
-              <div className="flex-1">
-                <label className="block text-gray-700">Check In</label>
-                <input
-                  type="date"
-                  className="w-full p-3 border border-gray-300 rounded-md mt-1 text-gray-700"
-                  placeholder="dd/mm/yyyy"
-                />
-              </div>
-              <div className="flex-1">
-                <label className="block text-gray-700">Check Out</label>
-                <input
-                  type="date"
-                  className="w-full p-3 border border-gray-300 rounded-md mt-1 text-gray-700"
-                  placeholder="dd/mm/yyyy"
-                />
-              </div>
-              <div className="flex-1">
-                <label className="block text-gray-700">Pax. Count</label>
-                <input
-                  type="number"
-                  min="1"
-                  max="10"
-                  defaultValue="1"
-                  className="w-full p-3 border border-gray-300 rounded-md mt-1 text-gray-700"
-                  placeholder="Person"
-                />
-              </div>
-              <div className="flex-1">
-                <label className="block text-gray-700">Nationality</label>
-                <input
-                  type="text"
-                  className="w-full p-3 border border-gray-300 rounded-md mt-1 text-gray-700"
-                  placeholder="Nationality"
-                />
-              </div>
-            </>
-          )}
-
-          {activeTab === "transfers" && (
-            <>
-              {/* Transfers Form */}
-              <div className="mt-5 bg-white bg-opacity-80 rounded-lg shadow-lg p-5 md:flex md:items-center space-y-4 md:space-y-0 md:space-x-4">
-                <label className="block text-gray-700">Select Transfer Type</label>
-                <select className="w-full p-3 border border-gray-300 rounded-md mt-1 text-gray-700">
-                  <option>Select Transfer</option>
-                  <option>Airport</option>
-                  <option>Hotel to Hotel</option>
-                  <option>City Tour</option>
-                </select>
-              </div>
-              <div className="flex-1">
-                <label className="block text-gray-700">Pickup Date</label>
-                <input
-                  type="date"
-                  className="w-full p-3 border border-gray-300 rounded-md mt-1 text-gray-700"
-                  placeholder="dd/mm/yyyy"
-                />
-              </div>
-              <div className="flex-1">
-                <label className="block text-gray-700">Pax. Count</label>
-                <input
-                  type="number"
-                  min="1"
-                  max="10"
-                  defaultValue="1"
-                  className="w-full p-3 border border-gray-300 rounded-md mt-1 text-gray-700"
-                  placeholder="Person"
-                />
-              </div>
-            </>
-          )}
-
-          {activeTab === "packages" && (
-            <>
-              {/* Packages Form */}
-              <div className="flex-1">
-                <label className="block text-gray-700">Select Package</label>
-                <select className="w-full p-3 border border-gray-300 rounded-md mt-1 text-gray-700">
-                  <option>Select Package</option>
-                  <option>Family Package</option>
-                  <option>Honeymoon Package</option>
-                  <option>Adventure Package</option>
-                </select>
-              </div>
-              <div className="flex-1">
-                <label className="block text-gray-700">Start Date</label>
-                <input
-                  type="date"
-                  className="w-full p-3 border border-gray-300 rounded-md mt-1 text-gray-700"
-                  placeholder="dd/mm/yyyy"
-                />
-              </div>
-              <div className="flex-1">
-                <label className="block text-gray-700">End Date</label>
-                <input
-                  type="date"
-                  className="w-full p-3 border border-gray-300 rounded-md mt-1 text-gray-700"
-                  placeholder="dd/mm/yyyy"
-                />
-              </div>
-              <div className="flex-1">
-                <label className="block text-gray-700">Pax. Count</label>
-                <input
-                  type="number"
-                  min="1"
-                  max="10"
-                  defaultValue="1"
-                  className="w-full p-3 border border-gray-300 rounded-md mt-1 text-gray-700"
-                  placeholder="Person"
-                />
-              </div>
-            </>
-          )}
-
-          {/* Request Button */}
-          <div className="flex-1 md:w-auto">
-            <button className="w-full md:w-auto px-6 py-3 bg-yellow-500 text-white font-semibold rounded-md hover:bg-yellow-600 mt-4 md:mt-0">
-              Request
-            </button>
-          </div>
-        </div>
+    <div className="max-w-4xl mx-auto p-8 bg-white bg-opacity-80 shadow-lg rounded-lg mt-8">
+      {/* Tabs */}
+      <div className="flex justify-center space-x-6 mb-6 border-b pb-4">
+        {['Hotel', 'Package', 'Transfer'].map((tab) => (
+          <button
+            key={tab}
+            onClick={() => handleTabSwitch(tab)}
+            className={`${
+              activeTab === tab
+                ? 'border-b-4 border-blue-500 text-blue-500'
+                : 'text-gray-500'
+            } pb-2 text-lg font-semibold focus:outline-none transition duration-300`}
+          >
+            {tab}
+          </button>
+        ))}
       </div>
-    </section>
+
+      {/* Tab Content */}
+      <div className="flex flex-col items-center p-6 bg-gray-50 rounded-lg shadow-md w-full">
+        {/* Form */}
+        {activeTab === 'Hotel' && (
+          <form className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 w-full max-w-4xl">
+            <div>
+              <label className="block text-gray-700">Select Hotel</label>
+              <select className="w-full p-3 border border-gray-300 rounded-lg mt-1 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-400">
+                <option>Select Hotel</option>
+                <option>KingsBurry</option>
+                <option>Galleface</option>
+                <option>Galadhari</option>
+              </select>
+            </div>
+            <div>
+              <label className="block text-gray-700">Check-in Date</label>
+              <input
+                type="date"
+                className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+              />
+            </div>
+            <div>
+              <label className="block text-gray-700">Check-out Date</label>
+              <input
+                type="date"
+                className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+              />
+            </div>
+            <div>
+              <label className="block text-gray-700">Nationality</label>
+              <input
+                type="text"
+                className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+                placeholder="Enter Nationality"
+              />
+            </div>
+            <div className="col-span-1 md:col-span-2 lg:col-span-4">
+              <button
+                type="submit"
+                className="w-full mt-4 py-3 px-4 bg-blue-500 text-white rounded-lg hover:bg-blue-600 focus:outline-none"
+              >
+                Search Hotels
+              </button>
+            </div>
+          </form>
+        )}
+
+        {activeTab === 'Package' && (
+          <form className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 w-full max-w-4xl">
+            <div>
+              <label className="block text-gray-700">Location</label>
+              <input
+                type="text"
+                className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+                placeholder="Enter location"
+              />
+            </div>
+            <div>
+              <label className="block text-gray-700">Location</label>
+              <input
+                type="text"
+                className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+                placeholder="Enter location"
+              />
+            </div>
+            <div>
+              <label className="block text-gray-700">Start Date</label>
+              <input
+                type="date"
+                className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+              />
+            </div>
+            <div>
+              <label className="block text-gray-700">End Date</label>
+              <input
+                type="date"
+                className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+              />
+            </div>
+            <div className="col-span-1 md:col-span-2 lg:col-span-4">
+              <button
+                type="submit"
+                className="w-full mt-4 py-3 px-4 bg-green-500 text-white rounded-lg hover:bg-green-600 focus:outline-none"
+              >
+                Search Packages
+              </button>
+            </div>
+          </form>
+        )}
+
+        {activeTab === 'Transfer' && (
+          <form className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 w-full max-w-4xl">
+            <div>
+              <label className="block text-gray-700">Pick-up Location</label>
+              <input
+                type="text"
+                className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+                placeholder="Enter pick-up location"
+              />
+            </div>
+            <div>
+              <label className="block text-gray-700">Drop-off Location</label>
+              <input
+                type="text"
+                className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+                placeholder="Enter drop-off location"
+              />
+            </div>
+            <div>
+              <label className="block text-gray-700">Transfer Date</label>
+              <input
+                type="date"
+                className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+              />
+            </div>
+            <div>
+              <label className="block text-gray-700">Location</label>
+              <input
+                type="text"
+                className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+                placeholder="Enter location"
+              />
+            </div>
+            <div className="col-span-1 md:col-span-2 lg:col-span-4">
+              <button
+                type="submit"
+                className="w-full mt-4 py-3 px-4 bg-yellow-500 text-white rounded-lg hover:bg-yellow-600 focus:outline-none"
+              >
+                Book Transfer
+              </button>
+            </div>
+          </form>
+        )}
+      </div>
+    </div>
   );
 };
 

@@ -1,5 +1,5 @@
 import React from "react";
-import bgImg from "/img/w.jpg"
+import bgImg from "/img/cards1/elephants.jpg"
 import v from "/img/Cards2/q.jpeg"
 import a from "/img/Cards2/w.jpg"
 import c from "/img/Cards2/e.jpg"

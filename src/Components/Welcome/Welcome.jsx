@@ -1,6 +1,6 @@
 export default function Container() {
   return (
-    <section className="flex flex-col bg-slate-900 px-5 py-10">
+    <section className="flex flex-col bg-slate-900 px-5 py-10 mt-5">
       <div className="flex flex-col items-center">
       <h3 className="text-2xl md:text-xl text-white font-semibold mb-3 text-left md:text-center w-full">
         WELCOME TO DIFERENCIA TOURS!

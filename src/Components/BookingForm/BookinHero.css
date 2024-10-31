@@ -1,0 +1,9 @@
+/* BookingHero.css */
+.active {
+    border-bottom: 2px solid #3182ce;
+    font-weight: bold;
+  }
+  
+  button {
+    @apply px-4 py-2 rounded-md bg-white hover:bg-gray-100;
+  }

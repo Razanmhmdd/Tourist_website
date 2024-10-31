@@ -1,4 +1,10 @@
-import React, { useEffect, useState, useRef } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/pagination';
+import { EffectCoverflow, Pagination } from 'swiper/modules';
+
+// Import images
 import r from "/img/cards1/casino.webp";
 import t from '/img/cards1/q.jpg';
 import u from '/img/cards1/w.jpg';
@@ -25,66 +31,58 @@ const images = [
   { title: "Green views", image: b },
   { title: "Hiking PACKAGE", image: x },
   { title: "Camping PACKAGE", image: z },
-  { title: "Elephants", image: a },
-  { title: "Golf Tours", image: v },
-  { title: "Beach View", image: c },
-  { title: "CULTURAL PACKAGE", image: d },
-  { title: "Beauty of Lakes", image: n },
-  { title: "Green views", image: b },
-  { title: "Hiking PACKAGE", image: x },
-  { title: "Camping PACKAGE", image: z }
-  
 ];
 
-export default function AutoCarousel() {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const carouselRef = useRef(null);
-  const totalItems = images.length;
-
-  // Auto-slide every 3 seconds
-  useEffect(() => {
-    const interval = setInterval(() => {
-      handleNext();
-    }, 3000);
-    return () => clearInterval(interval);
-  }, []);
-
-  // Move to the next slide
-  const handleNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % totalItems);
-  };
-
-  // Move the carousel smoothly
-  useEffect(() => {
-    if (carouselRef.current) {
-      const width = carouselRef.current.clientWidth;
-      carouselRef.current.style.transform = `translateX(-${currentIndex * width}px)`;
-      carouselRef.current.style.transition = 'transform 0.5s ease-in-out';
-    }
-  }, [currentIndex]);
-
+export default function ImageSwiper() {
   return (
-    <div className="overflow-hidden w-full">
-      <div
-        ref={carouselRef}
-        className="flex"
-      >
-        {images.map((item, index) => (
-          <div
-            key={index}
-            className="flex-shrink-0 w-full sm:w-80 h-60 relative"
-          >
+    <Swiper
+      effect="coverflow"
+      grabCursor={true}
+      centeredSlides={true}
+      slidesPerView="auto"
+      coverflowEffect={{
+        rotate: 30,
+        stretch: 0,
+        depth: 200,
+        modifier: 1,
+        slideShadows: true,
+      }}
+      pagination={{ clickable: true }}
+      modules={[EffectCoverflow, Pagination]}
+      loop={true}
+      style={{ paddingBottom: '30px' }}  // Adds space for pagination
+    >
+      {images.map((item, index) => (
+        <SwiperSlide key={index} style={{ maxWidth: '300px', borderRadius: '10px', overflow: 'hidden' }}>
+          <div style={{ position: 'relative', textAlign: 'center' }}>
             <img
               src={item.image}
-              alt={`Slide ${index + 1}`}
-              className="w-full h-full object-cover"
+              alt={item.title}
+              style={{
+                width: '100%',
+                height: '300px',            // Fixed height to give a consistent look
+                objectFit: 'cover',
+                borderRadius: '10px',
+                boxShadow: '0 4px 15px rgba(0, 0, 0, 0.3)',
+              }}
             />
-            <div className="absolute bottom-0 w-full bg-black bg-opacity-50 text-white text-center p-2 text-xs sm:text-sm md:text-base">
+            <div style={{
+              position: 'absolute',
+              bottom: '15px',
+              left: '50%',
+              transform: 'translateX(-50%)',
+              background: 'rgba(0, 0, 0, 0.6)',
+              color: 'white',
+              padding: '8px 16px',
+              borderRadius: '8px',
+              fontSize: '1rem',
+              fontWeight: '500',
+            }}>
               {item.title}
             </div>
           </div>
-        ))}
-      </div>
-    </div>
+        </SwiperSlide>
+      ))}
+    </Swiper>
   );
 }
