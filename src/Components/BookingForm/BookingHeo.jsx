@@ -8,7 +8,7 @@ const BookingHero = () => {
   };
 
   return (
-    <div className="max-w-4xl mx-auto p-2 sm:p-6 bg-white bg-opacity-75 shadow-lg rounded-lg mt-16 -mt-0">
+    <div className="max-w-4xl mx-auto p-2 sm:p-6 bg-white bg-opacity-75 shadow-lg rounded-lg  -mt-3">
       {/* Tabs */}
       <div className="flex justify-center space-x-2 sm:space-x-4 mb-4 border-b pb-2">
         {['Hotel', 'Package', 'Transfer'].map((tab) => (
@@ -17,7 +17,7 @@ const BookingHero = () => {
             onClick={() => handleTabSwitch(tab)}
             className={`${
               activeTab === tab
-                ? 'border-b-2 border-blue-500 text-blue-500'
+                ? 'border-b-2 border-blue-900 text-blue-900'
                 : 'text-gray-500'
             } pb-1 text-sm sm:text-base font-medium focus:outline-none transition duration-300`}
           >
@@ -33,7 +33,7 @@ const BookingHero = () => {
           <form className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             <div>
               <label className="block text-gray-600 text-sm mb-1">Select Hotel</label>
-              <select className="w-full p-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-1 focus:ring-blue-400">
+              <select className="w-full p-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-1 focus:ring-blue-900">
                 <option>Select Hotel</option>
                 <option>KingsBurry</option>
                 <option>Galleface</option>
@@ -44,14 +44,14 @@ const BookingHero = () => {
               <label className="block text-gray-600 text-sm mb-1">Check-in Date</label>
               <input
                 type="date"
-                className="w-full p-2 border rounded-md text-sm focus:outline-none focus:ring-1 focus:ring-blue-400"
+                className="w-full p-2 border rounded-md text-sm focus:outline-none focus:ring-1 focus:ring-blue-900"
               />
             </div>
             <div>
               <label className="block text-gray-600 text-sm mb-1">Check-out Date</label>
               <input
                 type="date"
-                className="w-full p-2 border rounded-md text-sm focus:outline-none focus:ring-1 focus:ring-blue-400"
+                className="w-full p-2 border rounded-md text-sm focus:outline-none focus:ring-1 focus:ring-blue-900"
               />
             </div>
             <div>
@@ -65,7 +65,7 @@ const BookingHero = () => {
             <div className="col-span-1 sm:col-span-2 lg:col-span-4">
               <button
                 type="submit"
-                className="w-full py-2 bg-blue-500 text-white text-sm rounded-md hover:bg-blue-600 focus:outline-none"
+                className="w-full py-2 bg-blue-900 text-white text-sm rounded-md hover:bg-blue-900 focus:outline-none"
               >
                 Search Hotels
               </button>

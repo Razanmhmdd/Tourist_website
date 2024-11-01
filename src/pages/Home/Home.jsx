@@ -1,7 +1,7 @@
   import React from 'react'
   import Navbar from '../../Components/Navbar/Navbar'
   import Hero from '../../Components/Hero/Hero'
-  import Welcome from '../../Components/Welcome/Welcome'
+
   import Youtube from '../../Components/Youtube/Youtube'
   import Cards1 from '../../Components/Cards/Cards1'
   import Cards2 from '../../Components/Cards/Cards2'
@@ -12,6 +12,8 @@
   import Footer from '../../Components/Footer/Footer'
   import Footer1 from '../../Components/Footer/Footer1'
 import HeroSection from '../../Components/Hero/HeroSection'
+import AboutUs from '../../Components/AboutUs/AboutUs'
+import MissionVision from '../../Components/Mission&Vission/MissionVision'
 
 
 
@@ -29,8 +31,9 @@ const Home = () => {
        
       </div>
        <div>
-        <Welcome/> 
+        <AboutUs/> 
       </div>
+      <MissionVision/>
       <div>
        <Youtube/> 
       </div>

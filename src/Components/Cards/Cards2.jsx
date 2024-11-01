@@ -37,7 +37,7 @@ const Cards2 = () => {
     <section>
         <div className="bg-cover bg-center min-h-screen p-10 flex flex-col items-center text-center mt-5  "
          style={{ backgroundImage: `url(${bgImg})`, }}>
-      <h2 className="text-3xl font-bold text-black mb-8">Experiences in Sri Lanka</h2>
+      <h2 className="text-3xl font-bold text-blue-900 mb-8">Experiences in Sri Lanka</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {experiences.map((experience, index) => (
           <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">

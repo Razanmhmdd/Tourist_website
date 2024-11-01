@@ -5,7 +5,7 @@ import 'swiper/css/pagination';
 import { EffectCoverflow, Pagination } from 'swiper/modules';
 
 // Import images
-import r from "/img/cards1/casino.webp";
+import r from "/img/cards1/wa.jpg";
 import t from '/img/cards1/q.jpg';
 import u from '/img/cards1/w.jpg';
 import y from '/img/cards1/honey.jpg';
@@ -19,7 +19,7 @@ import b from '/img/cards1/paddy.jpg';
 import n from '/img/cards1/lake.jpg';
 
 const images = [
-  { title: "NIGHTS OF LIGHTS PACKAGE", image: r },
+  { title: "Amazing Waterfall", image: r },
   { title: "HILL COUNTRY TOURS", image: t },
   { title: "GLIMPSE OF SRI LANKA", image: u },
   { title: "HONEYMOON PACKAGE", image: y },
