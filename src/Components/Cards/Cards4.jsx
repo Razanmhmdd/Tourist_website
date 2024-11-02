@@ -1,39 +1,43 @@
 import React from "react";
-import bgImg from "/img/tea.jpg"
-import v from "/img/Cards2/boat.jpg"
+import bgImg from "/img/q.jpg"
+import c from "/img/Cards2/img5.jpg"
 import a from "/img/Cards2/party.jpg"
-import c from "/img/Cards2/Surfing.jpg"
-
+import v from "/img/Cards2/img6.jpg"
+import d from "/img/Cards2/img7.jpg"
 
 
 const experiences = [
   {
-    title: "SURFING",
+    title: "Surfing",
     image: c,
-    description: "Surfing is a surface water sport in which an individual, a surfer (or two in tandem surfing), uses a board to ride on the forward section, or face, of a moving wave of water, which usually carries the surfer towards the shore. Waves suitable for surfing are primarily found on ocean shores, but can also be found in standing waves in the open ocean."
+    description: "Mouth Watering Delicious meals from our special menu rich in international and local cuisine, served by highly trained and informed personnel that provide personalized attention to each client. Menu explanations, wine pairing ideas, and other sorts of assistance can all be provided to ensure that guests have a wonderful dining experience."
   },
   {
-    title: "BEACH PARTIES",
+    title: "Beach Party",
     image: a,
-    description: "A beach party is a celebration that takes place on a beach or near the ocean. It usually involves activities like swimming, surfing, playing games, dancing, eating and drinking. Some beach parties are casual and informal, while others are more organized and themed. Here are some examples of beach party descriptions."
+    description: "Seafood is any form of sea life regarded as food by humans. It prominently includes fish and shellfish. Shellfish include various species of molluscs (e.g., bivalve molluscs such as clams, oysters and mussels, and cephalopods such as octopus and squid), crustaceans (e.g. shrimp, crabs, and lobster), and echinoderms (e.g. sea cucumbers and sea urchins)"
   },
   {
-    title: "BOAT RIDES",
+    title: "Boat Rides",
     image: v,
-    description: "There are many different types of boat rides available in Sri Lanka, each offering its own unique experience. You can take a whale watching tour and see some of the largest creatures on Earth, go on a mangrove safari and explore the unique ecosystem of the mangroves, or take a river cruise and relax as you take in the sights and sounds of the countryside"
+    description: "Experience the ultimate BBQ night at our enchanting villa, where the ambiance meets the sizzle of delicious flavors under the open sky. Picture a perfect evening filled with laughter and the irresistible aroma of grilled delights. Our outdoor party setup at the villa is tailor-made for those who relish the combination of great company and delectable barbecue."
   },
- 
+  {
+    title: "Hiking",
+    image: d,
+    description: "Sri Lankan traditional foods are a delightful fusion of flavors, showcasing dishes like rice and curry, hoppers, coconut sambol, and kottu roti. Richly spiced with ingredients like cinnamon, cardamom, and chili, these meals reflect the island’s diverse cultural heritage, offering a unique culinary experience rooted in centuries-old traditions."
+  },
 ];
 
-const Cards4 = () => {
+const Cards3 = () => {
   return (
     <section>
       <div
-        className="bg-cover bg-center min-h-screen p-10 flex flex-col items-center text-center"
+        className="bg-cover bg-center min-h-screen p-10 flex flex-col items-center text-center "
         style={{ backgroundImage: `url(${bgImg})` }}
       >
         <h2 className="text-3xl font-bold text-black mb-8">POPULAR ACTIVITIES IN SRILANKA</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {experiences.map((experience, index) => (
             <div
               key={index}
@@ -58,4 +62,4 @@ const Cards4 = () => {
   );
 };
 
-export default Cards4;
+export default Cards3;

@@ -4,11 +4,13 @@ const BookingHero = () => {
   const [activeTab, setActiveTab] = useState('Hotel');
 
   const handleTabSwitch = (tab) => {
+    console.log(`Switching to tab: ${tab}`);
     setActiveTab(tab);
   };
+  
 
   return (
-    <div className="max-w-4xl mx-auto p-2 sm:p-6 bg-white bg-opacity-75 shadow-lg rounded-lg  -mt-3">
+    <div className="max-w-4xl mx-auto p-2 sm:p-6 bg-white bg-opacity-75 shadow-lg rounded-lg  -mt-3 ">
       {/* Tabs */}
       <div className="flex justify-center space-x-2 sm:space-x-4 mb-4 border-b pb-2">
         {['Hotel', 'Package', 'Transfer'].map((tab) => (

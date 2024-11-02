@@ -1,15 +1,15 @@
 import React from "react";
 import bgImg from "/img/q.jpg"
 import v from "/img/Cards2/bbq.jpeg"
-import a from "/img/Cards2/sea.jpeg"
-import c from "/img/Cards2/food.jpeg"
-import d from "/img/Cards2/fine.jpeg"
+import a from "/img/Cards2/img2.webp"
+import c from "/img/Cards2/img4.jpg"
+import d from "/img/Cards2/img1.jpeg"
 
 
 const experiences = [
   {
     title: "Fine Dining",
-    image: d,
+    image: c,
     description: "Mouth Watering Delicious meals from our special menu rich in international and local cuisine, served by highly trained and informed personnel that provide personalized attention to each client. Menu explanations, wine pairing ideas, and other sorts of assistance can all be provided to ensure that guests have a wonderful dining experience."
   },
   {
@@ -24,7 +24,7 @@ const experiences = [
   },
   {
     title: "Traditional Foods",
-    image: c,
+    image: d,
     description: "Sri Lankan traditional foods are a delightful fusion of flavors, showcasing dishes like rice and curry, hoppers, coconut sambol, and kottu roti. Richly spiced with ingredients like cinnamon, cardamom, and chili, these meals reflect the island’s diverse cultural heritage, offering a unique culinary experience rooted in centuries-old traditions."
   },
 ];

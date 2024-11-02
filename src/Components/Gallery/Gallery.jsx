@@ -78,3 +78,89 @@ const Gallery = () => {
 };
 
 export default Gallery;
+// import React from 'react';
+// import { Swiper, SwiperSlide } from 'swiper/react';
+
+// // Import Swiper styles
+// import 'swiper/css';
+// import 'swiper/css/effect-coverflow';
+
+
+// import { EffectCoverflow, Pagination, Navigation } from 'swiper';
+
+// // Import images
+// import slide_image_1 from '/img/cards1/casino.webp';
+// import slide_image_2 from '/img/cards1/q.jpg';
+// import slide_image_3 from '/img/cards1/w.jpg';
+// import slide_image_4 from '/img/cards1/honey.jpg';
+// import slide_image_5 from '/img/cards1/golf.jpg';
+// import slide_image_6 from '/img/cards1/elephants.jpg';
+// import slide_image_7 from '/img/cards1/w.jpg';
+// import slide_image_8 from '/img/cards1/budha.jpg';
+
+// function Gallery() {
+//   return (
+//     <div className="container mx-auto p-8">
+//       <h1 className="text-3xl font-bold text-center mb-8">Flower Gallery</h1>
+//       <Swiper
+//         effect="coverflow"
+//         grabCursor={true}
+//         centeredSlides={true}
+//         loop={true}
+//         slidesPerView="auto"
+//         coverflowEffect={{
+//           rotate: 0,
+//           stretch: 0,
+//           depth: 100,
+//           modifier: 2.5,
+//         }}
+//         pagination={{ el: '.swiper-pagination', clickable: true }}
+//         navigation={{
+//           nextEl: '.swiper-button-next',
+//           prevEl: '.swiper-button-prev',
+//           clickable: true,
+//         }}
+//         modules={[EffectCoverflow, Pagination, Navigation]}
+//         className="swiper_container"
+//       >
+//         <SwiperSlide>
+//           <img src={slide_image_1} alt="Casino" className="rounded-lg" />
+//         </SwiperSlide>
+//         <SwiperSlide>
+//           <img src={slide_image_2} alt="Q" className="rounded-lg" />
+//         </SwiperSlide>
+//         <SwiperSlide>
+//           <img src={slide_image_3} alt="W" className="rounded-lg" />
+//         </SwiperSlide>
+//         <SwiperSlide>
+//           <img src={slide_image_4} alt="Honey" className="rounded-lg" />
+//         </SwiperSlide>
+//         <SwiperSlide>
+//           <img src={slide_image_5} alt="Golf" className="rounded-lg" />
+//         </SwiperSlide>
+//         <SwiperSlide>
+//           <img src={slide_image_6} alt="Elephants" className="rounded-lg" />
+//         </SwiperSlide>
+//         <SwiperSlide>
+//           <img src={slide_image_7} alt="W" className="rounded-lg" />
+//         </SwiperSlide>
+//         <SwiperSlide>
+//           <img src={slide_image_8} alt="Budha" className="rounded-lg" />
+//         </SwiperSlide>
+
+//         {/* Controls */}
+//         <div className="slider-controller flex justify-center mt-4">
+//           <div className="swiper-button-prev slider-arrow text-gray-600">
+//             <ion-icon name="arrow-back-outline"></ion-icon>
+//           </div>
+//           <div className="swiper-button-next slider-arrow text-gray-600">
+//             <ion-icon name="arrow-forward-outline"></ion-icon>
+//           </div>
+//         </div>
+//         <div className="swiper-pagination mt-4"></div>
+//       </Swiper>
+//     </div>
+//   );
+// }
+
+// export default Gallery;

@@ -1,6 +1,6 @@
 import React from 'react'
 import bgImg from "/img/w.jpg"
-import logo from "/img/logo.png";
+import logo from "/img/LOGO.png";
 
 const Footer = () => {
   return (
@@ -8,7 +8,7 @@ const Footer = () => {
         <footer className="footer bg-base-200 text-base-content  font-semibold	 p-10" style={{ backgroundImage: `url(${bgImg})` }}>
   <nav>
     <img src={logo} alt="Logo" className="h-12 w-auto" />
-    <a className="link link-hover ">No. 15/1/C,</a>
+    <a className="link link-hover ">No. 250D,</a>
     <a className="link link-hover">New Digana Road, Kundasale,</a>
     <a className="link link-hover">Kandy, SriLanka</a>
     <a className="link link-hover">Tel :- +94772250223</a>
