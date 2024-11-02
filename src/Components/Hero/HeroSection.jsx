@@ -3,7 +3,7 @@ import BookingHero from '../BookingForm/BookingHeo';
 
 const HeroSection = () => {
   return (
-    <section className="relative w-full min-h-screen overflow-hidden flex flex-col justify-center items-center text-center text-black">
+    <section className="relative w-full min-h-screen overflow-hidden flex flex-col justify-center items-center text-center text-black -z-50">
      
       <video
         className="absolute top-0 left-0 w-[100vw] h-[100vh] object-cover"

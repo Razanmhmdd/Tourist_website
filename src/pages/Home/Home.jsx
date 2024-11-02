@@ -14,6 +14,7 @@
 import HeroSection from '../../Components/Hero/HeroSection'
 import AboutUs from '../../Components/AboutUs/AboutUs'
 import MissionVision from '../../Components/Mission&Vission/MissionVision'
+import OurServices from '../../Components/OurServices/OurServices'
 
 
 
@@ -50,6 +51,9 @@ const Home = () => {
       </div>
       <div>
         <LogoCarousel/>
+      </div>
+      <div>
+        <OurServices/>
       </div>
       <div>
          <Footer/>

@@ -107,7 +107,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-transperant text-white px-4 py-3 md:px-10">
+    <nav className="bg-transperant text-white px-4 py-3 md:px-10 -z-40">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <div className="text-xl font-bold"> <button><img src={logo} alt="Logo" className="h-12 w-auto" /></button></div>
         <div className="hidden lg:flex flex-none">

@@ -1,9 +1,9 @@
 import React from "react";
-import bgImg from "/img/cards1/elephants.jpg"
-import v from "/img/Cards2/q.jpeg"
-import a from "/img/Cards2/w.jpg"
-import c from "/img/Cards2/e.jpg"
-import d from "/img/Cards2/r.jpg"
+import bgImg from "/img/cards1/elephants.jpg";
+import v from "/img/Cards2/q.jpeg";
+import a from "/img/Cards2/w.jpg";
+import c from "/img/Cards2/e.jpg";
+import d from "/img/Cards2/r.jpg";
 
 const experiences = [
   {
@@ -34,24 +34,26 @@ const experiences = [
 
 const Cards2 = () => {
   return (
-    <section>
-        <div className="bg-cover bg-center min-h-screen p-10 flex flex-col items-center text-center mt-5  "
-         style={{ backgroundImage: `url(${bgImg})`, }}>
-      <h2 className="text-3xl font-bold text-blue-900 mb-8">Experiences in Sri Lanka</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-        {experiences.map((experience, index) => (
-          <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
-            <img src={experience.image} alt={experience.title} className="w-full h-48 object-cover" />
-            <div className="p-5">
-              <h3 className="font-bold text-xl mb-2">{experience.title}</h3>
-              <p className="text-gray-700">{experience.description}</p>
+    <section className="relative">
+      <div className="absolute inset-0 bg-cover opacity-50" 
+           style={{ backgroundImage: `url(${bgImg})` }}></div>
+      <div className="relative bg-cover bg-center min-h-screen p-10 flex flex-col items-center text-center mt-5 z-10">
+        <h2 className="text-3xl font-bold text-blue-900 mb-8">Experiences in Sri Lanka</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          {experiences.map((experience, index) => (
+            <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
+              <img src={experience.image} alt={experience.title} className="w-full h-48 object-cover" />
+              <div className="p-5">
+                <h3 className="font-bold text-xl mb-2">{experience.title}</h3>
+                <p className="text-gray-700">{experience.description}</p>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
     </section>
   );
 };
 
 export default Cards2;
+  
