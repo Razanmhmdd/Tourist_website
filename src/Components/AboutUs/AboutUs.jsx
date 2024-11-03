@@ -1,4 +1,5 @@
 import React from 'react';
+import tea from "../../assets/img/cards1/tea.jpg"
 
 const AboutUs = () => {
   return (
@@ -23,7 +24,7 @@ const AboutUs = () => {
       {/* Right Side - Image */}
       <div className="lg:w-1/2">
         <img 
-          src="./img/tea.jpg" 
+          src={tea}
           alt="Sri Lanka scenery" 
           className="w-full h-auto rounded-lg shadow-lg"
         />

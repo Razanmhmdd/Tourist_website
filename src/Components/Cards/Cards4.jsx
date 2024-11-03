@@ -1,9 +1,9 @@
 import React from "react";
 import bgImg from "/img/q.jpg"
-import c from "/img/Cards2/img5.jpg"
-import a from "/img/Cards2/party.jpg"
-import v from "/img/Cards2/img6.jpg"
-import d from "/img/Cards2/img7.jpg"
+import c from "../../assets/img/Cards2/img5.jpg"
+import a from "../../assets/img/Cards2/party.jpg"
+import v from "../../assets/img/Cards2/img6.jpg"
+import d from "../../assets/img/Cards2/img7.jpg"
 
 
 const experiences = [
@@ -25,8 +25,7 @@ const experiences = [
   {
     title: "Hiking",
     image: d,
-    description: "Sri Lankan traditional foods are a delightful fusion of flavors, showcasing dishes like rice and curry, hoppers, coconut sambol, and kottu roti. Richly spiced with ingredients like cinnamon, cardamom, and chili, these meals reflect the island’s diverse cultural heritage, offering a unique culinary experience rooted in centuries-old traditions."
-  },
+    description:"Great trail that starts through a tea plantation. The trail is easier in the beginning but then it will eventually become quite steep. Keep pushing to reach the top as the views are well worth it. You will be able to see the entire city of Ella as well as Little Adam’s Peak. Bring plenty of water. The entire steep climb is in the forest so there are plenty of shade."  },
 ];
 
 const Cards3 = () => {
@@ -52,7 +51,7 @@ const Cards3 = () => {
               </div>
               <div className="p-5">
                 <h3 className="font-bold text-xl mb-2">{experience.title}</h3>
-                <p className="text-gray-700">{experience.description}</p>
+                <p className="text-gray-700 text-center">{experience.description}</p>
               </div>
             </div>
           ))}

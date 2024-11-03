@@ -1,13 +1,13 @@
 import React from 'react';
 import BookingHero from '../BookingForm/BookingHeo';
-
+import video from "../../assets/img/video.mp4"
 const HeroSection = () => {
   return (
     <section className="relative w-full min-h-screen overflow-hidden flex flex-col justify-center items-center text-center text-black ">
      
       <video
         className="absolute top-0 left-0 w-[100vw] h-[100vh] object-cover"
-        src="/img/video.mp4" 
+        src={video}
         autoPlay
         loop
         muted

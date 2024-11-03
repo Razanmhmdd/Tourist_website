@@ -6,14 +6,14 @@ import 'swiper/css/pagination';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 
 // Import images
-import r from '/img/cards1/casino.webp';
-import t from '/img/cards1/q.jpg';
-import u from '/img/cards1/w.jpg';
-import y from '/img/cards1/honey.jpg';
-import v from '/img/cards1/golf.jpg';
-import a from '/img/cards1/elephants.jpg';
-import c from '/img/cards1/w.jpg';
-import d from '/img/cards1/budha.jpg';
+import r from '../../assets/img/cards1/casino.webp';
+import t from '../../assets/img/cards1/q.jpg';
+import u from '../../assets/img/cards1/w.jpg';
+import y from '../../assets/img/cards1/honey.jpg';
+import v from '../../assets/img/cards1/golf.jpg';
+import a from '../../assets/img/cards1/elephants.jpg';
+import c from '../../assets/img/cards1/w.jpg';
+import d from '../../assets/img/cards1/budha.jpg';
 
 const Gallery = () => {
   const images = [r, t, u, y, v, a, c, d, r, t, u, y, v, a, c, d, r, t, u, y, v, a, c, d];

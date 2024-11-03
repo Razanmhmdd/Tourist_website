@@ -5,18 +5,18 @@ import 'swiper/css/pagination';
 import { EffectCoverflow, Pagination } from 'swiper/modules';
 
 // Import images
-import r from "/img/cards1/wa.jpg";
-import t from '/img/cards1/q.jpg';
-import u from '/img/cards1/w.jpg';
-import y from '/img/cards1/honey.jpg';
-import v from '/img/cards1/golf.jpg';
-import a from '/img/cards1/elephants.jpg';
-import c from '/img/cards1/w.jpg';
-import d from '/img/cards1/budha.jpg';
-import z from '/img/cards1/campfire.jpg';
-import x from '/img/cards1/hill.jpg';
-import b from '/img/cards1/paddy.jpg';
-import n from '/img/cards1/lake.jpg';
+import r from "../../assets/img/cards1/wa.jpg"
+import t from "../../assets/img/cards1/q.jpg"
+import u from "../../assets/img/cards1/w.jpg"
+import y from "../../assets/img/cards1/honey.jpg"
+import v from "../../assets/img/cards1/golf.jpg"
+import a from '../../assets/img/cards1/elephants.jpg';
+import c from '../../assets/img/cards1/w.jpg';
+import d from '../../assets/img/cards1/budha.jpg';
+import z from '../../assets/img/cards1/campfire.jpg';
+import x from '../../assets/img/cards1/hill.jpg';
+import b from '../../assets/img/cards1/paddy.jpg';
+import n from '../../assets/img/cards1/lake.jpg';
 
 const images = [
   { title: "Amazing Waterfall", image: r },

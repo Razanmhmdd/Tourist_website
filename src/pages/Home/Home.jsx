@@ -1,7 +1,5 @@
   import React from 'react'
   import Navbar from '../../Components/Navbar/Navbar'
-  import Hero from '../../Components/Hero/Hero'
-
   import Youtube from '../../Components/Youtube/Youtube'
   import Cards1 from '../../Components/Cards/Cards1'
   import Cards2 from '../../Components/Cards/Cards2'
@@ -15,6 +13,7 @@ import HeroSection from '../../Components/Hero/HeroSection'
 import AboutUs from '../../Components/AboutUs/AboutUs'
 import MissionVision from '../../Components/Mission&Vission/MissionVision'
 import OurServices from '../../Components/OurServices/OurServices'
+import DestinationGuide from '../../Components/Destination/DestinationGuide'
 
 
 
@@ -34,12 +33,15 @@ const Home = () => {
        <div>
         <AboutUs/> 
       </div>
+      <div>
+        <DestinationGuide/>
+      </div>
       <MissionVision/>
       <div>
        <Youtube/> 
       </div>
       <div>
-       <Cards1/> 
+      <DestinationGuide/>
       </div>
       <div>
          <Cards2/>
@@ -47,7 +49,7 @@ const Home = () => {
         <Cards4/>
       </div> 
        <div>
-         <Gallery/> 
+       <Cards1/> 
       </div>
       <div>
         <LogoCarousel/>
