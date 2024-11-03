@@ -1,14 +1,14 @@
 
 import React, { useState } from 'react';
 
-// import logo from "../../assets/img/LOGO.png"
+import logo from "../../assets/img/LOGO.png"
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <nav className="bg-transperant text-white px-4 py-3 md:px-10 ">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
-        {/* <div className="text-xl font-bold"> <button><img src={logo} alt="Logo" className="h-12 w-auto" /></button></div> */}
+        <div className="text-xl font-bold"> <button><img src={logo} alt="Logo" className="h-12 w-auto" /></button></div>
         <div className="hidden lg:flex flex-none">
           <ul className="menu menu-horizontal px-1 font-semibold space-x-4">
             <li><a href="#">Home</a></li>
